@@ -1,0 +1,53 @@
+[
+	{
+		"name": "Resurface",
+		"description": "I am the sole developer of Resurface. Resurface is a free and open source plugin, consisting of modern technologies, that allows builders to apply a classic Roblox aesthetic to their experiences.\nResurface averages around 2,500+ unique downloads per month and has a 95% approval rating, as of November 2024.",
+		"created": "2020-05-01",
+		"category": "roblox",
+		"links": [
+			{
+				"name": "Learn more",
+				"url": "https://devforum.roblox.com/t/resurface-convert-surfaces-to-studs-and-more/1226536",
+				"icon": "ic:baseline-info"
+			},
+			{
+				"name": "View source",
+				"url": "https://github.com/cxmeel/resurface-plugin",
+				"icon": "simple-icons:github"
+			}
+		],
+		"media": [
+			{
+				"type": "youtube",
+				"url": "https://www.youtube.com/watch?v=cl4tLTEiG48",
+				"alt": "Resurface Trailer"
+			}
+		],
+		"tags": ["plugin", "react", "open-source", "free"]
+	},
+	{
+		"name": "Codify",
+		"description": "Codify is a paid plugin that converts Instances into snippets of code. This is especially useful for, but not limited to, UI designers, who are able to construct their GUI visually using the built-in Studio UI editor and convert their creations to a code snippet in their framework and language of choice.\nAs of November 2024, Codify has around a 90% approval rating on the Roblox Creator Store.",
+		"created": "2020-03-01",
+		"category": "roblox",
+		"links": [
+			{
+				"name": "Purchase",
+				"url": "https://devforum.roblox.com/t/codify-convert-anything-to-luau-typescript-fusion-react-vide-rojo/473076",
+				"icon": "ic:baseline-shopping-cart"
+			},
+			{
+				"name": "Learn more →",
+				"url": "https://devforum.roblox.com/t/codify-convert-anything-to-luau-typescript-fusion-react-vide-rojo/473076"
+			}
+		],
+		"media": [
+			{
+				"type": "youtube",
+				"url": "https://www.youtube.com/watch?v=aLFWPKNiBGU",
+				"alt": "Codify Trailer"
+			}
+		],
+		"tags": ["plugin", "react", "open-source", "free"]
+	}
+]

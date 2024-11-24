@@ -1,0 +1,55 @@
+{
+	"socialLinks": {
+		"github": {
+			"name": "GitHub",
+			"handle": "cxmeel",
+			"url": "https://github.com/cxmeel",
+			"iconId": "simple-icons:github"
+		},
+		"x": {
+			"name": "X (Twitter)",
+			"handle": "cxmeel",
+			"url": "https://x.com/cxmeel",
+			"iconId": "simple-icons:x"
+		},
+		"linkedin": {
+			"name": "LinkedIn",
+			"handle": "cxmeels",
+			"url": "https://www.linkedin.com/in/cxmeels",
+			"iconId": "simple-icons:linkedin"
+		},
+		"itchio": {
+			"name": "Itch.io",
+			"handle": "cxmeel",
+			"url": "https://cxmeel.itch.io",
+			"iconId": "simple-icons:itchdotio"
+		},
+		"discord": {
+			"name": "Discord",
+			"handle": "cxmeel",
+			"url": "https://discord.com/users/567023984214933544",
+			"iconId": "simple-icons:discord"
+		},
+		"bluesky": {
+			"name": "Bluesky",
+			"handle": "@cxmeel.bsky.social",
+			"url": "https://bsky.app/profile/cxmeel.bsky.social",
+			"iconId": "simple-icons:bluesky"
+		},
+		"devforum": {
+			"name": "DevForum",
+			"handle": "cxmeels",
+			"url": "https://devforum.roblox.com/u/cxmeels/summary",
+			"iconId": "simple-icons:robloxstudio"
+		},
+		"roblox": {
+			"name": "Roblox",
+			"handle": "cxmeels",
+			"url": "https://www.roblox.com/users/3659905/profile",
+			"iconId": "simple-icons:roblox"
+		}
+	},
+	"headerLinkIds": ["roblox", "github", "linkedin", "x"],
+	"footerLinkIds": ["devforum", "x", "linkedin"],
+	"primaryLinkIds": ["devforum", "x", "github", "linkedin"]
+}

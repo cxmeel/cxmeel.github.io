@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply flex min-h-dvh flex-col bg-accent-100 font-sans text-base text-accent-900;
+}
+
+@layer utilities {
+	.scrollbar-hide {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+.wavy-border-bottom {
+	--mask: radial-gradient(
+				1.8rem at 50% calc(100% - 2.5rem),
+				#000 99%,
+				#0000 101%
+			)
+			calc(50% - 2rem) 0/4rem 100%,
+		radial-gradient(1.8rem at 50% calc(100% + 1.5rem), #0000 99%, #000 101%) 50%
+			calc(100% - 1rem) / 4rem 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	padding-bottom: 1.5rem;
+}
+
+.wavy-border-top {
+	--mask: radial-gradient(1.8rem at 50% 2.5rem, #000 99%, #0000 101%)
+			calc(50% - 2rem) 0/4rem 100%,
+		radial-gradient(1.8rem at 50% -1.5rem, #0000 99%, #000 101%) 50% 1rem/4rem
+			100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	padding-top: 1.5rem;
+}
+
+b {
+	@apply text-lg font-bold leading-none text-accent-700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-bold lowercase text-accent-600;
+}
+
+h1 {
+	@apply text-2xl;
+}
+
+h2 {
+	@apply text-xl;
+}
+
+h3 {
+	@apply text-lg;
+}
+
+h4 {
+	@apply text-base;
+}
+
+h5 {
+	@apply text-sm;
+}
+
+h6 {
+	@apply text-xs;
+}
+
+ol {
+	@apply ml-4 flex list-inside list-disc flex-col gap-0;
+
+	& li::marker {
+		@apply text-accent-600;
+	}
+}

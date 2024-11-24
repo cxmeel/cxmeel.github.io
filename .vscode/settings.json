@@ -1,0 +1,11 @@
+{
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"eslint.format.enable": true,
+	"stylua.targetReleaseVersion": "latest",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "always"
+	},
+	"css.validate": false
+}
