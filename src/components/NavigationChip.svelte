@@ -9,7 +9,7 @@
 
 	let isSelected = $derived(
     selected ??
-        URL.parse(href, $page.url.origin)?.pathname === $page.url.pathname.replace(/\/$/, ""),
+        URL.parse(href, $page.url.origin)?.pathname === ($page.url.pathname !== "/" ? $page.url.pathname.replace(/\/$/, "") : "/"),
 );
 </script>
 
