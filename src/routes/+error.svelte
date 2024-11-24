@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { page } from "$app/stores";
+	import Button from "../components/Button.svelte";
 </script>
 
 <div
-	class="flex w-full max-w-3xl flex-col items-center gap-4 place-self-center"
->
+	class="flex w-full max-w-3xl flex-col items-center gap-4 place-self-center">
 	<div class="flex flex-col items-center">
 		{#if $page.status >= 200 && $page.status <= 299}
 			<h1>uh-oh!</h1>
@@ -21,10 +21,5 @@
 		</div>
 	</div>
 
-	<a
-		href="/"
-		class="rounded-full bg-accent-500 px-4 py-2 font-semibold lowercase text-accent-50 transition-all hover:scale-110 hover:bg-accent-700"
-	>
-		Back to safety &rarr;</a
-	>
+	<Button href="/">Back to safety &rarr;</Button>
 </div>
