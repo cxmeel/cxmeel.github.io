@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Resurface",
-		"description": "I am the sole developer of Resurface. Resurface is a free and open source plugin, consisting of modern technologies, that allows builders to apply a classic Roblox aesthetic to their experiences.\nResurface averages around 2,500+ unique downloads per month and has a 95% approval rating, as of November 2024.",
+		"description": "Resurface is a free and open source plugin, consisting of modern technologies, that allows builders to apply a classic Roblox aesthetic to their experiences.\nResurface averages around 2,500+ unique downloads per month and has a 95% approval rating, as of November 2024.",
 		"created": "2020-05-01",
 		"category": "roblox",
 		"links": [
@@ -48,6 +48,6 @@
 				"alt": "Codify Trailer"
 			}
 		],
-		"tags": ["plugin", "react", "open-source", "free"]
+		"tags": ["plugin", "paid"]
 	}
 ]
