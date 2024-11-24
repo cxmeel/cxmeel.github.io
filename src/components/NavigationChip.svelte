@@ -8,9 +8,9 @@
 	} = $props();
 
 	let isSelected = $derived(
-		selected ??
-			URL.parse(href, $page.url.origin)?.pathname === $page.url.pathname,
-	);
+    selected ??
+        URL.parse(href, $page.url.origin)?.pathname === $page.url.pathname.replace(/\/$/, ""),
+);
 </script>
 
 <div
