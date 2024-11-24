@@ -1,5 +1,3 @@
-import type { Config } from "@sveltejs/kit";
-
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { mdsvex } from "mdsvex";
 
@@ -15,4 +13,4 @@ export default {
 		}),
 	},
 	extensions: [".svelte", ".svx"],
-} satisfies Config;
+};

@@ -6,9 +6,6 @@
 	import "../app.css";
 	import Navigation from "../widgets/Navigation.svelte";
 
-	export const ssr = false;
-	export const prerender = false;
-
 	let { children } = $props();
 </script>
 
@@ -29,8 +26,7 @@
 <Header />
 
 <div
-	class="flex w-full max-w-screen-md flex-col gap-2 place-self-center px-4 pb-2"
->
+	class="flex w-full max-w-screen-md flex-col gap-2 place-self-center px-4 pb-2">
 	<Navigation />
 </div>
 
