@@ -109,10 +109,17 @@
 
 	{#if links?.length}
 		<div class="flex w-full flex-row flex-wrap items-stretch gap-1">
-			{#each links as { name, url, icon }, i}
+			{#each links as { name, url, icon }}
 				<Button
 					href={url}
-					class="grow bg-accent-400 hover:bg-accent-500 hover:text-accent-50">
+					class="grow bg-accent-400 hover:bg-accent-500 hover:text-accent-50"
+					on:click={() =>
+						window.gtag &&
+						window.gtag("event", "click", {
+							event_category: "project_link",
+							event_label: `${name} #${slug}`,
+						})}>
+					>
 					{#if icon}
 						<Icon {icon} />
 					{/if}
