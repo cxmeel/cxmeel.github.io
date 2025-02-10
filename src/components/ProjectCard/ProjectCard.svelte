@@ -48,16 +48,25 @@
 					{#if type === "image"}
 						<img src={url} {alt} class="w-full rounded" />
 					{:else if type === "youtube"}
+						{@const videoHash = new URL(url).searchParams.get("v")}
+
 						{#if compact}
-							<img
-								src={`https://img.youtube.com/vi/${new URL(url).searchParams.get("v")}/maxresdefault.jpg`}
-								{alt}
-								class="w-full rounded" />
+							<picture>
+								<source
+									srcset={`https://img.youtube.com/vi_webp/${videoHash}/maxresdefault.webp`}
+									type="image/webp" />
+								<source
+									srcset={`https://img.youtube.com/vi/${videoHash}/maxresdefault.jpg`}
+									type="image/jpeg" />
+
+								<img
+									src={`https://img.youtube.com/vi_webp/${videoHash}/maxresdefault.webp`}
+									{alt}
+									class="w-full rounded" />
+							</picture>
 						{:else}
 							<iframe
-								src="https://www.youtube-nocookie.com/embed/{new URL(
-									url,
-								).searchParams.get('v')}"
+								src={`https://www.youtube-nocookie.com/embed/${videoHash}`}
 								title={alt}
 								frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
