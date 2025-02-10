@@ -119,7 +119,6 @@
 							event_category: "project_link",
 							event_label: `${name} #${slug}`,
 						})}>
-					>
 					{#if icon}
 						<Icon {icon} />
 					{/if}
