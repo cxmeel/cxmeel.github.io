@@ -8,7 +8,12 @@
 		<div
 			class="flex aspect-1 max-h-36 min-h-24 items-center justify-center rounded-full bg-accent-950 text-onAccent-950">
 			{#if config.avatar.type == "image"}
-				<img src={config.avatar.url} alt="Profile" class="rounded-full" />
+				<img
+					src={config.avatar.url}
+					alt="Profile"
+					class="rounded-full"
+					width="100%"
+					height="100%" />
 			{:else if config.avatar.type == "text"}
 				<span class="pb-2 text-4xl font-bold lowercase">
 					{config.name.at(0)}
