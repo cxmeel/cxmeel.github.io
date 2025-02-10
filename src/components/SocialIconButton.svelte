@@ -1,7 +1,12 @@
 <script lang="ts">
-	import type { SocialLink } from "../data/socials";
-
 	import Icon from "@iconify/svelte";
+
+	interface SocialLink {
+		iconId?: string;
+		url?: string;
+		name: string;
+		handle: string;
+	}
 
 	export let socialLink: SocialLink | undefined = undefined;
 
