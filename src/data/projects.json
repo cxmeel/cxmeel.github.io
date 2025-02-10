@@ -23,7 +23,12 @@
 				"alt": "Resurface Trailer"
 			}
 		],
-		"tags": ["plugin", "react", "open-source", "free"]
+		"tags": [
+			"plugin",
+			"react",
+			"open-source",
+			"free"
+		]
 	},
 	{
 		"name": "Codify",
@@ -32,13 +37,14 @@
 		"category": "roblox",
 		"links": [
 			{
+				"name": "Learn more",
+				"url": "https://devforum.roblox.com/t/codify-convert-anything-to-luau-typescript-fusion-react-vide-rojo/473076",
+				"icon": "ic:baseline-info"
+			},
+			{
 				"name": "Purchase",
 				"url": "https://devforum.roblox.com/t/codify-convert-anything-to-luau-typescript-fusion-react-vide-rojo/473076",
 				"icon": "ic:baseline-shopping-cart"
-			},
-			{
-				"name": "Learn more →",
-				"url": "https://devforum.roblox.com/t/codify-convert-anything-to-luau-typescript-fusion-react-vide-rojo/473076"
 			}
 		],
 		"media": [
@@ -48,6 +54,9 @@
 				"alt": "Codify Trailer"
 			}
 		],
-		"tags": ["plugin", "paid"]
+		"tags": [
+			"plugin",
+			"paid"
+		]
 	}
 ]
