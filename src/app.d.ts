@@ -8,6 +8,11 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface Window {
+		dataLayer: IArguments[];
+		gtag?: (...args: any[]) => void;
+	}
 }
 
 export {};

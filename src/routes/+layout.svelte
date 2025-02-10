@@ -4,10 +4,13 @@
 
 	import "@fontsource-variable/outfit/index.css";
 	import "../app.css";
+	import Analytics from "../widgets/Analytics.svelte";
 	import Navigation from "../widgets/Navigation.svelte";
 
 	let { children } = $props();
 </script>
+
+<Analytics id="G-8MLYBLYS5" />
 
 <div class="hidden">
 	<span class="bg-accent-50 text-onAccent-50"></span>
