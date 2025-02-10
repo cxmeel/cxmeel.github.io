@@ -43,26 +43,28 @@
 		</h2>
 
 		<div class="flex rounded-lg bg-accent-50 p-1">
-			<div class="aspect-h-9 aspect-w-16 h-auto w-full">
+			<div class="aspect-h-9 aspect-w-16 w-full">
 				{#each media as { type, url, alt }}
 					{#if type === "image"}
 						<img src={url} {alt} class="w-full rounded" />
 					{:else if type === "youtube"}
 						{@const videoHash = new URL(url).searchParams.get("v")}
+						{@const thumbnailRes = "hqdefault"}
 
 						{#if compact}
-							<picture>
+							<picture
+								class="aspect-h-9 aspect-w-16 flex w-full items-center justify-center overflow-hidden">
 								<source
-									srcset={`https://img.youtube.com/vi_webp/${videoHash}/maxresdefault.webp`}
+									srcset={`https://img.youtube.com/vi_webp/${videoHash}/${thumbnailRes}.webp`}
 									type="image/webp" />
 								<source
-									srcset={`https://img.youtube.com/vi/${videoHash}/maxresdefault.jpg`}
+									srcset={`https://img.youtube.com/vi/${videoHash}/${thumbnailRes}.jpg`}
 									type="image/jpeg" />
 
 								<img
-									src={`https://img.youtube.com/vi_webp/${videoHash}/maxresdefault.webp`}
+									src={`https://img.youtube.com/vi_webp/${videoHash}/${thumbnailRes}.webp`}
 									{alt}
-									class="w-full rounded" />
+									class="m-auto h-auto w-full rounded" />
 							</picture>
 						{:else}
 							<iframe
