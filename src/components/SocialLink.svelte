@@ -14,6 +14,7 @@
 	class:sm:col-span-1={!primary}
 	class:cursor-default={!url}
 	title={`${name} - ${handle}`}
+	rel="me noopener noreferrer"
 >
 	<div
 		class="flex aspect-1 h-full items-center justify-center rounded-sm bg-accent-50 p-4 text-lg text-accent-800"

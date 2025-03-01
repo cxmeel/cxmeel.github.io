@@ -17,7 +17,7 @@
 		: "";
 </script>
 
-<a {href} rel="noreferrer noopener" {title} class="group">
+<a {href} rel="me noreferrer noopener" {title} class="group">
 	<div
 		class={`flex aspect-1 min-h-10 items-center justify-center rounded-full bg-white bg-opacity-25 p-2 transition-all hover:shadow-xl group-hover:-translate-y-1 group-hover:scale-110 group-hover:bg-opacity-75`}>
 		<span
